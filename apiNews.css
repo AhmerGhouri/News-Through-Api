@@ -1,0 +1,225 @@
+.container{
+
+    margin-top: 100px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+
+
+}
+
+.mainlist{
+
+
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    
+
+
+
+}
+
+.tablist{
+
+
+    padding: 12px 20px 12px 20px; 
+    cursor: pointer;
+    list-style: none;
+    font-family: 'Poppins';
+    border-right: 1px solid lightgrey;
+    font-size: 15px;
+    font-weight: 600;
+    color: #013777;
+
+
+}
+
+.tablist:hover{
+
+
+    
+    background-color: lightblue;
+    color: white;
+
+
+}
+
+
+.datalist{
+
+
+    border-bottom : 1px solid lightgrey;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+
+
+
+
+}
+
+.datalist:hover{
+
+
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(240, 239, 239);
+    box-shadow: 2px 2px 10px grey;
+
+
+}
+
+
+.tab-content{
+
+
+    
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 0px 25px 50px 25px;
+    overflow-y: scroll;
+    width: 70%;
+    height: 200px;
+    margin-top: 20px;
+    
+    
+
+
+}
+
+
+.active {
+
+    background-color: #013777;
+    color: white;
+
+}
+
+
+.list{
+
+
+    list-style: none;
+    font-family: 'Poppins';
+    font-size: 14px;
+    padding: 0px 30px 0px 30px;
+    width: 100%;
+
+
+}
+
+
+.calender{
+
+    background-color : purple ; 
+    text-align : center; 
+    padding : 3px 5px 3px 5px ; 
+    border : 1px solid black;
+    font-size: 0.50em;
+    border-radius: 2px 2px 0px 0px;
+    color: white;
+  	font-weight: 700;
+  	font-family: 'Poppins';
+
+
+
+
+}
+
+.calender1{
+
+    background-color : white !important; 
+    text-align : center ; 
+    border : 1px solid black;
+    padding: 1px 0px 1px 0px;
+    border-radius: 0px 0px 2px 2px;
+    font-size: 0.7em;
+    font-weight: 600;
+  	font-weight: 700;
+  	font-family: 'Poppins';
+
+
+
+
+}
+
+.proli{
+
+
+    padding: 0px 0px 0px 0px;
+
+
+
+}
+
+
+.btn-sucess {
+
+
+    background-color: #5cb85c !important;
+    border: #4cae4c solid 1px !important;
+
+
+}
+
+.btn-primary{
+
+
+
+    color: white !important;
+    background-color: purple !important;
+
+
+
+
+}
+
+
+.text-muted{
+
+
+    color: white !important;
+
+
+}
+
+
+.img-circle{
+
+
+    border-radius: 50px !important;
+
+
+}
+
+
+.btn:hover {
+
+
+    background-color: green !important;
+
+
+}
+
+.fa-eye{
+
+
+    color: white !important;
+
+
+}
+
+.tablist i{
+
+
+    margin-right: 10px;
+
+
+}
+
