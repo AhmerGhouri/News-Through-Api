@@ -22,7 +22,7 @@
 
 }
 
-.tablist{
+.tablist_cat{
 
 
     padding: 12px 20px 12px 20px; 
@@ -37,7 +37,7 @@
 
 }
 
-.tablist:hover{
+.tablist_cat:hover{
 
 
     
@@ -94,7 +94,7 @@
 }
 
 
-.active {
+.active_li {
 
     background-color: #013777;
     color: white;
@@ -215,7 +215,7 @@
 
 }
 
-.tablist i{
+.tablist_cat i{
 
 
     margin-right: 10px;

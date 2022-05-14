@@ -23,13 +23,13 @@ function cateList() {
 
             listCate.forEach(lst => {
 
+                var lstid = lst.cat_id
 
-
-                list.innerHTML += `
+                let htmlCode = `
             
             
 
-            <li class="tablist" onclick=getData(${lst.cat_id})>
+            <li class="tablist_cat" id="tabli" onclick=getData(${lst.cat_id})>
                        
 
                 <a>
@@ -46,12 +46,15 @@ function cateList() {
             
             `
 
+            list.innerHTML += htmlCode;
 
-
-
-            });
-
-
+            // // $('#tab-content-0').addClass('in active_li');
+            // $('.tablist_cat').eq(1).addClass('active_li');
+            // console.log($('.tablist_cat').eq(0))
+            
+            
+        });
+        
 
             active()
 
@@ -63,6 +66,8 @@ function cateList() {
 
 
 }
+
+
 
 function getData(id) {
 
@@ -144,9 +149,6 @@ function getData(id) {
                 `
 
 
-
-
-
                 }
                 
 
@@ -196,6 +198,7 @@ function getData(id) {
 
 
 
+
         })
 
 
@@ -205,42 +208,63 @@ function getData(id) {
 }
 
 
-
-
 function active() {
 
 
-    var ul = document.querySelectorAll(".mainlist a")
+    var ul = document.querySelectorAll(".tablist_cat")
+
+    var tabli = document.getElementsByClassName("tablist_cat")
+
+    tabli[0].className = "active_li";
+
+
+
+    ul.forEach(ull => {
+
+        ull.addEventListener('click' , function(){
+
+
+            ul.forEach(lli => lli.classList.remove('active_li'))
+            this.classList.add('active_li')
+
+        })
+
+
+    })
+
+
+
+    // var ul = document.querySelectorAll(".mainlist a")
 
 
 
 
-    for (i = 0, length =  ul.length ; i < length ; i++) {
+    // for (i = 0, length =  ul.length ; i < length ; i++) {
 
 
 
-        // ul[0].className = "active"
+        
+    //     ul[i].addEventListener('click' , function() {
+            
+            
 
-        ul[i].onclick = function() {
-
-
-
-            var li = document.querySelector(".mainlist li.active")
-
-            if (li) li.classList.remove("active");
-            this.parentNode.classList.add('active')
-
-
-
-        }
-
+    //         var current = document.getElementsByClassName("tablist_cat")
+    
+    //         var li = document.querySelector(".mainlist li.active_li")
+            
+    //         if (li) 
+            
+    //         li.classList.remove("active_li");
+    //         this.parentNode.classList.add('active_li')
 
 
+    //     })
 
-    }
+
+
+
+    // }
 
 
 }
-
-
 
